@@ -1,7 +1,7 @@
 import { Stack, FormControl, Text, Input, FormErrorMessage, FormHelperText, Button, useToast, Box, Heading } from "@chakra-ui/react";
 import { useForm } from "react-hook-form"
+import { Endpoints } from "../utils/endpoints";
 
-const SUBSCRIBE_NEWSLETTER_ENDPOINT = '/.netlify/functions/subscribeToNewsletter';
 
 export const SubscribeEmail = () => {
     const toast = useToast();
@@ -21,7 +21,7 @@ export const SubscribeEmail = () => {
             });
         }
         return new Promise((resolve, reject) => {
-            fetch(SUBSCRIBE_NEWSLETTER_ENDPOINT, {
+            fetch(Endpoints.NewsletterSubscribtion, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
