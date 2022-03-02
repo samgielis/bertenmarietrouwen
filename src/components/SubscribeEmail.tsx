@@ -1,6 +1,7 @@
 import { Stack, FormControl, Text, Input, FormErrorMessage, FormHelperText, Button, useToast, Box } from "@chakra-ui/react";
 import { useForm } from "react-hook-form"
 import { Endpoints } from "../utils/endpoints";
+import { StyledButton } from "./StyledButton";
 
 
 export const SubscribeEmail = () => {
@@ -65,9 +66,9 @@ export const SubscribeEmail = () => {
 
             </FormControl>
             <Box>
-            <Button color="white" fontStyle="italic" borderRadius={0} bgColor="black" colorScheme="gray" border="1px solid transparent" _hover={{bgColor: "white", color: "black", border: "1px solid black"}} mr={3} isLoading={isSubmitting} type="submit">
+            <StyledButton isLoading={isSubmitting} type="submit">
                 Inschrijven
-            </Button>
+            </StyledButton>
 
             </Box>
         </Stack>

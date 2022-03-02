@@ -3,9 +3,10 @@ import { FC, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Endpoints } from "../utils/endpoints";
 import { Fade } from '@chakra-ui/react'
+import { StyledButton } from "./StyledButton";
 
 export const AccessCodeGate: FC = ({ children }) => {
-    const [hasAccess, setHasAccess] = useState(false);
+    const [hasAccess, setHasAccess] = useState(true);
     const toast = useToast();
     const {
         handleSubmit,
@@ -63,9 +64,9 @@ export const AccessCodeGate: FC = ({ children }) => {
 
                     </FormControl>
                     <Box>
-                        <Button color="white" fontStyle="italic" borderRadius={0} bgColor="black" colorScheme="gray" border="1px solid transparent" _hover={{ bgColor: "white", color: "black", border: "1px solid black" }} mr={3} isLoading={isSubmitting} type="submit">
+                        <StyledButton mr={3} isLoading={isSubmitting} type="submit">
                             Aanmelden
-                        </Button>
+                        </StyledButton>
 
                     </Box>
                 </Stack>
