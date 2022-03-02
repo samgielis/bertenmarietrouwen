@@ -3,7 +3,7 @@ import {
   ChakraProvider, Container, Flex,
 } from "@chakra-ui/react"
 import { theme } from "./theme"
-import { SaveTheDate } from "./components/SaveTheDate"
+import { SaveTheDate } from "./screens/SaveTheDate"
 import { AccessCodeGate } from "./components/AccessCodeGate"
 
 export const App = () => (
