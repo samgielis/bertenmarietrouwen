@@ -1,9 +1,9 @@
 import { VStack, Heading, Text, Box, Center } from "@chakra-ui/react"
 import { SubscribeEmail } from "../components/SubscribeEmail"
-import { DualScreen } from "../layouts/DualScreen";
+import { StackedScreen } from "../layouts/StackedScreen";
 
 export const SaveTheDate = () => {
-  return <DualScreen>
+  return <StackedScreen>
     <VStack spacing={24}>
       <VStack spacing={6} letterSpacing={"1em"} textTransform={"uppercase"} >
         <Heading fontWeight={"400"} size={"4xl"}>
@@ -29,5 +29,5 @@ export const SaveTheDate = () => {
 
       <SubscribeEmail />
     </Box>
-  </DualScreen>
+  </StackedScreen>
 }

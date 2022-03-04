@@ -1,9 +1,8 @@
 import {
   Center,
-  ChakraProvider, Container, Flex, Heading, Img,
+  ChakraProvider, Container, Flex
 } from "@chakra-ui/react"
 import { theme } from "./theme"
-import { SaveTheDate } from "./screens/SaveTheDate"
 import { AccessCodeGate } from "./components/AccessCodeGate"
 import { InvitationScreen } from "./screens/InvitationScreen"
 
