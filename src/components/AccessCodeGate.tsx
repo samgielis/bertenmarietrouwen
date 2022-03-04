@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, FormErrorMessage, FormHelperText, Input, Stack, useToast, Text } from "@chakra-ui/react";
+import { Box, FormControl, FormErrorMessage, FormHelperText, Input, Stack, useToast, Text } from "@chakra-ui/react";
 import { FC, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Endpoints } from "../utils/endpoints";
@@ -6,7 +6,7 @@ import { Fade } from '@chakra-ui/react'
 import { StyledButton } from "./StyledButton";
 
 export const AccessCodeGate: FC = ({ children }) => {
-    const [hasAccess, setHasAccess] = useState(true);
+    const [hasAccess, setHasAccess] = useState(false);
     const toast = useToast();
     const {
         handleSubmit,
