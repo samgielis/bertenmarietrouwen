@@ -26,6 +26,10 @@ export const InvitationScreen = () => {
             <Text fontSize={"lg"}>
                 De trouw zelf gaat door om <b>10.30u</b> aan <b>het stadhuis in Lede</b>. Die ceremonie willen we in beperkte kring laten doorgaan. We sparen alle opgekropte feestenergie op voor later.
             </Text>
+            <Text fontSize={"lg"}>
+                <p>~</p>
+            <b>Vrijblijvende cadeautip</b>: BE21 0018 6479 6203. Wij sparen voor verf, een nieuwe zetel, een boekenkast, en een reis naar Patagonië.
+            </Text>
         </Stack>
         <Stack spacing={10} pos="relative">
             <Heading fontWeight={400}>Uitnodiging</Heading>
