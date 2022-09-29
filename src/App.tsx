@@ -3,8 +3,6 @@ import {
   ChakraProvider, Container, Flex
 } from "@chakra-ui/react"
 import { theme } from "./theme"
-import { AccessCodeGate } from "./components/AccessCodeGate"
-import { InvitationScreen } from "./screens/InvitationScreen"
 import { ThankYou } from "./screens/ThankYou"
 
 export const App = () => (
